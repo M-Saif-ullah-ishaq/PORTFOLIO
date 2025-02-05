@@ -1,0 +1,22 @@
+{%extends 'index.html'%}
+
+{%block content%}
+
+<form action="{% url 'contact_view' %}" method="POST">
+
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="form-group">
+        <input  name="name"  class="field form-control" type="text" placeholder="Name *" >
+    </div>
+    <div class="form-group">
+        <input name="email"  class="field form-control" type="email" placeholder="Email *" >
+    </div>
+    <div class="form-group">
+        <textarea name="message"class="field form-control"  placeholder="Message *" rows="7" ></textarea>
+    </div>
+    </div>
+    <div class="form-group ">
+        <button type="submit"  class="form-control btn btn-primary" >Send Message</button>
+</form>
+{%endblock%}

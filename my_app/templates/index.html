@@ -1,0 +1,516 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with JohnDoe landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Muhammad saif ullah ishaq</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{%static 'myapp/vendors/themify-icons/css/themify-icons.css'%}">
+    <!-- Bootstrap + JohnDoe main styles -->
+	<link rel="stylesheet" href="{%static 'myapp/css/johndoe.css'%}">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+            </ul>  
+            <div class="header-content">
+                <h4 class="header-subtitle" >Hello, I am</h4>
+                <h4 class="header-title">M SAIF ULLAH </h4>
+                <h6 class="header-mono" >Django python Developer | UI/UX Designer</h6>
+                <button href="#"class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                     <img src="{%static 'myapp/imgs/avatar2.jpg'%}" alt="" class="brand-img"> 
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Saif ullah</h5>
+                        <div class="brand-subtitle">Django web Developer | UI/UX Designer</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    {% comment %} <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li> {% endcomment %}
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% comment %} about section {% endcomment %}
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Who am I ?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">A Web Designer / Developer Located In Our Lovely Earth</h5>
+                <p class="mt-20">"Django developer builds secure, scalable web apps, managing backend and databases."</p>
+                <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button>
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Personal Info</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    <li><span>Birthdate</span> : 20/06/2003</li>
+                    <li><span>Email</span> : muhammadsaifullahishaq1@gmail.com</li>
+                    <li><span>Phone</span> : + (92) 325-5477432</li>
+                    <li><span>Linkdin</span> : Muhammadsaifullahishaq@Linkdin.com </li>
+                    <li><span>Address</span> :  Rawalpindi,Punjab,Pakistan.</li>
+                </ul>
+                <ul class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+                </ul>  
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">My Expertise</h3>
+                <span class="line mb-5"></span>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>UX Design</h6>
+                        <p class="subtitle"> Translate Figma designs into fully functional, responsive web interfaces.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Web Development</h6>
+                        <p class="subtitle">Django web developer</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Machine learning</h6>
+                        <p class="subtitle">Teach computers to learn patterns</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Resume Section-->
+    <section class="section" id="resume">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Expertise</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">2022 - Present</h6>
+                            <P>UI/UX Developer</P>
+                            <P class="subtitle">As a UX/UI designer since 2022, I create user-centered, accessible designs for web and mobile, excelling in research, wireframing, and prototyping with tools like Figma and Sketch.</P>
+                            <hr>
+                            <h6 class="title text-danger">2022 - Present</h6>
+                            <P>Django Web Developer</P>
+                            <P class="subtitle">As a Django developer, I create scalable web applications, focusing on backend development, database management, and API integration. My projects include a portfolio website and a weather website, each designed for efficiency, security, and user-friendly experiences.</P>
+                            <hr>
+                            <h6 class="title text-danger">2023-Present</h6>
+                            <P>Machine Learning</P>
+                            <P class="subtitle">As a machine learning specialist using Python, I develop predictive models and data-driven solutions, utilizing libraries like Pandas, Scikit-Learn, and TensorFlow for data preprocessing, model optimization, and analysis.</P>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Education</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            
+                            <h6 class="title text-danger">2021 - 2025</h6>
+                            <P>bachelor's in Computer Science</P>
+                            <P class="subtitle">I'm currently pursuing my bachelor's degree in Computer Science at the University of Engineering and Technology, Taxila, Pakistan.</P>
+                            <hr>
+                            <h6 class="title text-danger">2019 - 2021</h6>
+                            <P>Intermediate(ICS)</P>
+                            <P class="subtitle">I completed my intermediate education from Army Public collage Jarrar Camp, Rawalpindi, with a 90% score.</P>
+                            <hr>
+                            <h6 class="title text-danger">2017 - 2019</h6>
+                            <P>Matric</P>
+                            <P class="subtitle">I completed my matriculation from Army Public School Jarrar Camp, Rawalpindi, achieving an 83% score.</P>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Skills</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                           <h6>hTL5 &amp; CSS3</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>JavaScript</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>C++</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>SQL</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            {% comment %} <h6>Laborum</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div> {% endcomment %}
+                            <h6>Python</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Languages</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                           <h6>English</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Urdu</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Arabic</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 37%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  {% comment %} atchievments section  {% endcomment %}
+    <section class="section bg-dark text-center">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="row ">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">100</h1>
+                            <p class="text-light mb-1">Hours Worked</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">40</h1>
+                            <p class="text-light mb-1">Project Finished</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">200</h1>
+                            <p class="text-light mb-1">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">2k</h1>
+                            <p class="text-light mb-1">Coffee Drinked</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="service">
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-vector text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">UI/Ux developer</h5>
+                            <P class="subtitle">We craft exceptional digital experiences by blending user-centered design with innovative technology. Our UI/UX design services focus on creating visually appealing and intuitive interfaces that optimize user engagement and drive business success.
+                            </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-write text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Django Web Developer</h5>
+                            <P class="subtitle">As a Django web developer, I specialize in crafting robust and scalable web applications. I leverage the power of Django's framework to build efficient, secure, and user-friendly websites. My services include database design, API development, front-end integration, and deployment. I am committed to delivering high-quality solutions tailored to your specific needs. 
+                            </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-package text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Machine Learning models</h5>
+                            <P class="subtitle">As an AI/ML specialist, I develop intelligent systems that leverage advanced algorithms and techniques to extract valuable insights from data. My services include data analysis, model development, deployment, and ongoing maintenance. I specialize in creating solutions for tasks such as image recognition, natural language processing, predictive analytics, and more. By harnessing the power of AI/ML, I help businesses make informed decisions and gain a competitive edge. </P>
+                        </div>
+                    </div>
+                </div>
+                {% comment %} <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-map-alt text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Provident</h5>
+                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Consectetur</h5>
+                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-support text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Veritatis</h5>
+                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                        </div>
+                    </div> {% endcomment %}
+                {% comment %} </div> {% endcomment %}
+            </div>
+        </div>
+    </section>
+
+   {% comment %} portfolio section {% endcomment %}
+
+    <section class="section" id="blog">
+        <div class="container">
+            <h2 class="mb-5">Latest <span class="text-danger">Projects</span></h2>
+            <div class="row">
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="{%static 'myapp/imgs/blog1.jpg'%}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Portfolio Website</h6>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                            {% comment %} <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                            <a href="#"><i class="ti-comment"></i> 123</a> {% endcomment %}
+                        </p>
+                        
+                        <p>I've developed a responsive portfolio website using Django, a powerful Python web framework. This website is designed to adapt seamlessly to various screen sizes, ensuring an optimal user experience across desktop, tablet, and mobile devices. It showcases my projects, skills, and experiences in an engaging and visually appealing manner. </p>
+                          <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div><!-- end of blog wrapper -->
+
+                <!-- blog-card -->
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="{%static 'myapp/imgs/blog2.jpg'%}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Weather App</h6>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                            {% comment %} <a href="#"><i class="ti-heart text-danger"></i> 456</a>
+                            <a href="#"><i class="ti-comment"></i> 264</a>
+                         {% endcomment %}
+                        </p>
+                        <p>I've developed a responsive Django-based weather app designed for desktop use. This web application provides real-time weather information, including current conditions, forecasts, and historical data. It's optimized for various screen sizes, ensuring a seamless user experience across different devices. The app utilizes a user-friendly interface, allowing users to easily search for weather information by city or location. By leveraging the power of Django, this weather app offers a reliable and efficient solution for accessing up-to-date weather data.</p>
+
+                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div><!-- end of blog wrapper -->
+                <!-- blog-card -->
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="{%static 'myapp/imgs/blog3.jpg'%}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h4 class="title">Blog Website</h4>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                            {% comment %} <a href="#"><i class="ti-heart text-danger"></i> 431</a>
+                            <a href="#"><i class="ti-comment"></i> 312</a> {% endcomment %}
+                        </p>
+                        
+                        <p> I've developed a feature-rich Django-powered blog website for desktop users. It offers a seamless user experience with intuitive navigation, customizable themes, and robust content management capabilities. The blog is optimized for SEO, ensuring maximum visibility and engagement.                        </p>
+
+                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div><!-- end of blog wrapper -->
+
+            </div>
+        </div>
+    </section>
+
+    <div class="section contact" id="contact">
+        <div id="map" class="map"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form-card">
+                        <h4 class="contact-title">Send a message</h4>
+                        {%block content%}
+                        {% endblock %}
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="contact-title">Get in touch</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-mobile icon-md"></i>
+                            </div>
+                            <div class="col-10 ">
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (92) 325-5477432</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-map-alt icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Address :<br> <span class="text-muted">Rawalpindi,Punjab,Pakistan..</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Email :<br> <span class="text-muted">muhammadsaifullahishaq1@gmail.com</span></h6>
+                            </div>
+                        </div>
+                        <ul class="social-icons pt-4">
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By <a href="" target="_blank"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards">Saif ullah</span></a> 
+            </p>
+        </div>
+    </footer>
+
+	<!-- core  -->
+    <script src="{%static 'myapp/vendors/jquery/jquery-3.4.1.js'%}"></script>
+    <script src="{%static 'myapp/vendors/bootstrap/bootstrap.bundle.js'%}"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="{%static 'myapp/vendors/bootstrap/bootstrap.affix.js'%}"></script>
+
+    <!-- Isotope  -->
+    <script src="{%static 'myapp/vendors/isotope/isotope.pkgd.js'%}"></script>
+    
+    <!-- Google mpas -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="{%static 'myapp/js/johndoe.js'%}"></script>
+
+</body>
+</html>
